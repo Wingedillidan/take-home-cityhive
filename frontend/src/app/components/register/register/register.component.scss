@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  
+  form {
+    width: 20rem;
+    height: 20rem;
+    label {
+      display: block;
+      margin-top: 1rem;
+    }
+
+    input {
+      padding: .5rem;
+      margin-top: .3rem;
+      width: 100%;
+      display: block;
+    }
+    
+    .buttons {
+      margin-top: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+}

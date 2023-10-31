@@ -1,1 +1,10 @@
-<app-message-list />
+<div class="page">
+  <nav>
+    <h1>MY SMS MESSENGER</h1>
+    <button (click)="logout()" class="btn-frame">Log Out</button>
+  </nav>
+  <div class="content-container">
+    <app-new-message class="content card" />
+    <app-message-list class="content card" />
+  </div>
+</div>

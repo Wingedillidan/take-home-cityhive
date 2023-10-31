@@ -1,5 +1,13 @@
-<div>
-  <div *ngFor="let message of messages">
-    <p>{{message.text}}</p>
-  </div>
+<div class="page">
+  <h2>Message History ({{messageService.messages.length}})</h2>
+  <div class="message-list">
+    <div class="message" *ngFor="let message of messageService.messages">
+      <span class="details">
+        <span class="phone">{{message.phoneNumber}}</span>
+        <small>{{message.createdAt}}</small>
+      </span>
+      <p class="text box">{{message.text}}</p>
+      <small class="count">{{message.text.length}} / 250</small>
+    </div>
+  </div>  
 </div>

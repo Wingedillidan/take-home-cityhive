@@ -18,7 +18,7 @@ import { FormsModule } from '@angular/forms';
     RegisterComponent,
     MessengerPageComponent,
     MessageListComponent,
-    NewMessageComponent
+    NewMessageComponent,
   ],
   imports: [
     BrowserModule,

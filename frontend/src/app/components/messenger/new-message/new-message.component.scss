@@ -1,0 +1,41 @@
+.page {
+  padding: 0 3rem;
+  
+  form {
+    label {
+      display: block;
+      margin-top: 1rem;
+    }
+
+    input, textarea {
+      margin-top: .3rem;
+      width: 100%;
+      display: block;
+    }
+    
+    #phone-number {
+      padding: 0 .5rem;
+      height: 3rem;
+      font-size: 1.5rem;
+    }
+    
+    #text {
+      padding: .5rem;
+      resize: none;
+    }
+
+    .count {
+      display: block;
+      text-align: right;
+      color: gray;
+      margin-top: .3rem;
+    }
+    
+    .buttons {
+      margin-top: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+}

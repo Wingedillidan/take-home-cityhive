@@ -7,7 +7,6 @@ import { MessageService } from 'src/app/services/message/message.service';
   styleUrls: ['./message-list.component.scss']
 })
 export class MessageListComponent {
-  messages: {text: string}[] = [];
   messageService = inject(MessageService);
 
   constructor() {
@@ -16,8 +15,6 @@ export class MessageListComponent {
 
   load() {
     this.messageService.getMessages()
-      .subscribe(
-        response => this.messages = response.messages
-      )
+      .subscribe()
   }
 }

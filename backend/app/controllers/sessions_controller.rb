@@ -3,7 +3,7 @@ class SessionsController < ApplicationController
 
   def index
     puts 'current user:', current_user
-    if current_user
+    if logged_in?
       render json: {success: 'session exists'}
     else
       render json: {error: 'session not found'}, status: 400
@@ -18,6 +18,14 @@ class SessionsController < ApplicationController
       render json: {success: 'login successful'}
     else
       render json: {error: 'Could not login'}, status: 400
+    end
+  end
+  
+  def destroy
+    if logout
+      render json: {success: 'logged out'}
+    else
+      render json: {error: 'Could not log out'}, status: 400
     end
   end
 

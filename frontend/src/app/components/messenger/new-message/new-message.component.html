@@ -1,1 +1,14 @@
-<p>new-message works!</p>
+<div class="page">
+  <h2>New Message</h2>
+  <form (ngSubmit)="sendMessage()">
+    <label for="phone-number">Phone Number</label>
+    <input class="box" [(ngModel)]="phoneNumber" id="phone-number" name="phoneNumber" required />
+    <label for="text">Message</label>
+    <textarea class="box" maxlength="250" rows="8" [(ngModel)]="text" id="text" name="text" required></textarea>
+    <small class="count">{{text.length}} / 250</small>
+    <div class="buttons">
+      <button class="btn-ghost" type="button" (click)="clear()">Clear</button>
+      <button class="btn-primary" type="submit">Submit</button>
+    </div>
+  </form>
+</div>

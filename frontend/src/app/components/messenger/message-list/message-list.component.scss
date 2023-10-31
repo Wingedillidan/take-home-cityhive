@@ -1,0 +1,36 @@
+.page {
+  height: 100%;
+  padding: 0 3rem;
+  
+  .message-list {
+    overflow-y: scroll;
+    height: 85%;
+    padding-right: 1rem;
+
+    .message {
+      margin: 1.5rem 0;
+
+      .details {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .phone {
+          font-weight: bold;
+        }
+      }
+
+      .text {
+        padding: .5rem;
+        min-height: 2.5rem;
+        margin: .3rem 0;
+      }
+
+      .count {
+        display: block;
+        color: gray;
+        text-align: right;
+      }
+    }
+  }
+}

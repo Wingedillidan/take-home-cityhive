@@ -1,0 +1,35 @@
+.page {
+  nav {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+
+    * {
+      color: white;
+    }
+
+    h1 {
+      margin: 0;
+    }
+  }
+  h1 {
+    font-style: bold;
+    text-align: center;
+  }
+  .content-container {
+    padding: 0 1rem;
+    max-width: 75rem;
+    margin-top: 3rem;
+    display: flex;
+    height: 75vh;
+    min-height: 50vh;
+    gap: 3rem;
+
+    .content {
+      flex: 1;
+      height: 100%;
+    }
+  }
+}

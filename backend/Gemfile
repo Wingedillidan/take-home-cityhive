@@ -58,3 +58,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem "sorcery", "~> 0.16.5"
 
 gem "rack-cors", "~> 2.0"
+
+gem "twilio-ruby", "~> 6.8"
+
+gem "dotenv-rails", "~> 2.8", :groups => [:development, :test]

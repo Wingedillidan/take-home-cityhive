@@ -1,6 +1,14 @@
-<form (ngSubmit)="register()">
-  <input [(ngModel)]="email" name="email" placeholder="Email" />
-  <input [(ngModel)]="password" name="password" type="password" placeholder="Password" />
-  <input [(ngModel)]="passwordConfirmation" name="passwordConfirmation" type="password" placeholder="Re-enter Password" />
-  <button type="submit">Register</button>
-</form>
+<div class="container">
+  <form class="card" (ngSubmit)="register()">
+    <label for="email">Email</label>
+    <input class="box" [(ngModel)]="email" id="email" name="email" placeholder="Email" />
+    <label for="password">Password</label>
+    <input class="box" [(ngModel)]="password" id="password" name="password" type="password" placeholder="Password" />
+    <label for="password-confirmation">Confirm Password</label>
+    <input class="box" [(ngModel)]="passwordConfirmation" id="password-confirmation" name="passwordConfirmation" type="password" placeholder="Re-enter Password" />
+    <div class="buttons">
+      <a href="/sign-in" class="btn-ghost">Back</a>
+      <button class="btn-primary" type="submit">Register</button>
+    </div>
+  </form>
+</div>

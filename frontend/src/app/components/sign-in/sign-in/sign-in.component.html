@@ -1,5 +1,13 @@
-<form (ngSubmit)="login()">
-  <input [(ngModel)]="email" name="email" required />
-  <input [(ngModel)]="password" type="password" name="password" required />
-  <button type="submit">Login</button>
-</form>
+<div class="container">
+  <form class="card" (ngSubmit)="login()">
+    <h1>Sign In</h1>
+    <label for="email">Email</label>
+    <input class="box" [(ngModel)]="email" id="email" name="email" required />
+    <label for="password">Password</label>
+    <input class="box" [(ngModel)]="password" id="password" type="password" name="password" required />
+    <div class="buttons">
+      <a href="/register" class="btn-ghost">Sign Up</a>
+      <button class="btn-primary" type="submit">Login</button>
+    </div>
+  </form>
+</div>
