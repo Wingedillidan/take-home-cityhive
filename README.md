@@ -1,9 +1,10 @@
 # MyMessenger
-Hello! This took quite a bit of time, so I wasn't able to get to every bonus (mainly deploying and the webhook). I would have loved to have gotten around to those bonuses as it was fun working on this.
+Hello! This took quite a bit of time, so I wasn't able to get to every bonus.
 
 Below are the instructions for running locally...
 
 ## Backend
+**Requires either a Ruby version manager or `ruby-3.2.2`**
 ```bash
 cd path/to/project/backend
 ```
@@ -44,3 +45,4 @@ There's a lot that still needs to be done given more time:
 - Get delivery webhook to work
   - Display delivery time
 - Use a styling framework
+- Pagination probably
